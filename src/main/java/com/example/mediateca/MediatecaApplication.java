@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MediatecaApplication {
 
     public static void main(String[] args) {
+
+        int x = 0;
         SpringApplication.run(MediatecaApplication.class, args);
     }
 
