@@ -17,4 +17,12 @@ public class SerieController {
     public List<Serie> listar() {
         return series;
     }
+
+    @GetMapping("/{id}")
+    public Serie buscarPorId(@PathVariable Long id) {
+        return series.stream()
+                .filter(s -> s.id().equals(id))
+                .findFirst()
+                .orElse(null);
+    }
 }
