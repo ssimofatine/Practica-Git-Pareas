@@ -26,4 +26,12 @@ public class SerieController {
                 .findFirst()
                 .orElse(null);
     }
+
+    @GetMapping("/plataforma/{plataforma}")
+    public List<Serie> buscarPorPlataforma(@PathVariable String plataforma) {
+        return series.stream()
+                .filter(s -> s.plataforma().equalsIgnoreCase(plataforma))
+                .toList();
+    }
+
 }
