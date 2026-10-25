@@ -25,4 +25,11 @@ public class PeliculaController {
                 .findFirst()
                 .orElse(null);
     }
+
+    @GetMapping("/director/{director}")
+    public List<Pelicula> buscarPorDirector(@PathVariable String director) {
+        return peliculas.stream()
+                .filter(p -> p.director().equalsIgnoreCase(director))
+                .toList();
+    }
 }
