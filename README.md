@@ -5,3 +5,6 @@ Práctica de la UD2: trabajo en pareja con Git y GitHub.
 - Persona B: (Mohamed 2)
 ## Endpoints disponibles
 - (pendiente)
+
+- `GET /series` — listado de series
+- `GET /series/{id}` — serie por identificador
