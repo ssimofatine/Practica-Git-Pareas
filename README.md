@@ -5,3 +5,11 @@ Práctica de la UD2: trabajo en pareja con Git y GitHub.
 - Persona B: (Mohamed 2)
 ## Endpoints disponibles
 - (pendiente)
+
+- `GET /series` — listado de series
+- `GET /series/{id}` — serie por identificador
+- `GET /peliculas` — listado de películas
+- `GET /peliculas/{id}` — película por identificador
+- `GET /peliculas/director/{director}` — películas por director
+- `GET /series/plataforma/{plataforma}` — series por plataforma
+- 
