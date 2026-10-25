@@ -18,6 +18,7 @@ public class SerieController {
         return series;
     }
 
+    // buy id aqui profesor Javier
     @GetMapping("/{id}")
     public Serie buscarPorId(@PathVariable Long id) {
         return series.stream()
